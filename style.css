@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* global */
@@ -24,46 +25,67 @@ footer ul li{
 a{
     text-decoration: none;
 }
+
+p{
+    font-size: 20px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
 /* contenitori */
 
-.bug {
+/*.bug {
     border: 1px solid red;
     
-}
+}*/
 .contenitore{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
+}
+.contenitore-piccolo-sotto{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid blue;
+    text-align: center;
     
 }
+
+.contenitore-immagine-sotto{
+    display: flex;
+    max-width: 80%;
+    border: 1px solid violet;
+    
+}
+
 .contenitore-piccolo{
     display: flex;
-    min-width: 39%;
     max-width: 39%;
-    min-height: 200px;
-    margin: 10px 0px;
     border: 1px solid blue;
+    
 }
 .contenitore-immagine{
     display: flex;
-    min-width: 59%;
     max-width: 59%;
-    min-height: 200px;
     border: 1px solid violet;
+    
 }
 .contenitore-header{
     display: flex;
     max-width: 1200px;
-    min-width: 1200px;
+    width: 100%;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
 }
 
 .odd{
-    background-color:  grey;;
+    background-color:  rgb(245, 245, 245);;
 }
 .flex-direction{
     flex-direction: row-reverse;
@@ -73,8 +95,9 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 700px;
-
+    background-image: url(img/jumbo.png);
+    background-size: cover;
+    height: 520px;
 }
 .immagine-sotto{
     display: flex;
@@ -83,12 +106,26 @@ a{
 
 .contenitore-immagine-sotto{
     display: flex;
-    min-width: 39%;
-    min-height: 200px;
+    height: 50%;
     margin: 10px 0px;
     border: 1px solid blue;
 }
 
+#margine-h1{
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+#margine-h2{
+    font-size: 30px; 
+    background-image: url(img/stars.svg);
+    padding: 10px;
+    background-size: cover;
+}
+
+.swap-testo-colonna{
+    display: flex;
+    flex-direction: column;
+}
 /* footer */
 
 .colonna{
@@ -120,4 +157,5 @@ a{
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #255ce8;
 }

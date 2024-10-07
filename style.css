@@ -3,18 +3,26 @@
     margin: 0;
     padding: 0;
 }
+
+/* ricordati :hover */
+/* ricordati scroll-to-action */
+/* ricordati scroll:behavior smooth */
 /* global */
 
 body{
     font-family: arial;
+    line-height: 1;
 }
 
 img{
     max-width: 100%;
 }
+h2{
+    font-size: 40px;
+
+}
 a {
     text-decoration: none;
-    color: white;
 }
 button{
     color: black;
@@ -46,7 +54,8 @@ button{
     justify-content: space-between;
     max-width: 1200px;
     width: 1200px;
-    margin-top: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .ul-header{
@@ -59,7 +68,9 @@ button{
 .li-header{
     padding: 0px 10px;
 }
-
+.li-header a{
+    color: white;
+}
 .bottone-header{
     border-radius: 100px;
     width: 124px;
@@ -76,12 +87,8 @@ button{
     height: 660px;
 }
 
-.contenitore-hero p{
-    color: white;
-}
-
 .contenitore-interno-hero{
-    width:  700px;
+    width:  1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,22 +97,25 @@ button{
 
 .contenitore-primario{
     max-width: 600px;
-    display: flex;
-    align-items: center;
 }
-
+.contenitore-primario p{
+    color: white;
+    padding: 0;
+    font-size: 18px;
+}
 .contenitore-primario h1{
     align-self: center;
-    padding: 20px;
-}
-.contenitore-primario h1 {
     color: white;
+    padding: 40px;
+    font-size: 36px;
 }
+
 .contenitore-bottoni-hero{
     display: flex;
     gap: 20px;
     justify-content: center;
-    width: 100%;
+    margin-top: 20px;
+    align-items: center;
 }
 .bottone-header1{
     border-radius: 100px ;
@@ -127,6 +137,8 @@ button{
     display: flex;
     justify-content: center;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .main-contenitore-interno{
@@ -181,11 +193,24 @@ button{
     width: 20%;
     height: 50px;
 }
+.contenitore-main-testo-speciale{
+    display: flex;
+    align-items: center; 
+    max-width: 60%;
+    justify-content: center;
+}
+.contenitore-main-immagine-speciale img{
+    width: 100%;
+    max-width: 100%;
+}
 
 .sfondo-stellare{
     background-image: url(img/stars.svg);
-    background-size: cover;
     background-repeat: no-repeat;
+    width: 550px;
+    padding: 20px;
+    background-size: cover;
+    font-size: 30px;
 }
 /* Footer */
 .contenitore-footer-esterno{
@@ -207,13 +232,20 @@ button{
 
 .contenitore-footer-interno ul{
     padding-top: 0px;
-    color: blue;
+    color: rgb(114, 137, 214);
 }
-
+.contenitore-footer-interno h3{
+    padding-top: 0px;
+    color: rgb(114, 137, 214);
+    font-size: 23px;
+}
 .contenitore-footer-interno li{
     list-style: none;
     padding-top: 10px;
     text-align: left;
+}
+.contenitore-footer-interno a{
+    color: rgb(221, 224, 213);
 }
 
 .contenitore-footer-nav{
@@ -223,19 +255,28 @@ button{
     align-items: center;
     width: 1200px;
     max-width: 1200px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    padding: 20px;
 }
 .footer-flag{
     display: flex;
     flex-direction: column;
-    max-width: 33%;
+    max-width: 20%;
+}
+.footer-flex-italia{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    color: rgb(221, 224, 213);
+}
+.footer-flex-italia p{
+    color: rgb(221, 224, 213);
+    padding: 0;
+}
+.footer-flex-italia img{
+    width: 10%;
+    padding-right: 5px;
 }
 
-.footer-flag img{
-    width: 20%;
-    align-self: center;
-}
 .hr{
     max-width: 1200px;
     width: 1200px;
@@ -249,8 +290,25 @@ button{
 }
 
 
-.bottone-footer{
-    border-radius: 100px;
-    width: 80px;
-    height: 30px;
+
+/* button */
+.button{
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 30px;
+    background-color: white;
+    color: rgb(34, 38, 41);
+}
+.padding-item-right{           /*logo scarica*/
+    padding-right: 5px;
+}
+.padding-item-left{
+    padding-left: 5px;
+}
+.button-main{
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 30px;
+    background-color: rgb(113, 135, 217);
+    color: rgb(255, 255, 255);
 }
